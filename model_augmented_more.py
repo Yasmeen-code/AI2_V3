@@ -101,9 +101,6 @@ print("Best Parameters:", grid_search.best_params_)
 # -------------------------
 # 1️⃣1️⃣ Evaluate Model
 # -------------------------
-# -------------------------
-# 1️⃣1️⃣ Evaluate Model
-# -------------------------
 pred_train = model.predict(X_train)
 pred_test = model.predict(X_test)
 r2_train = metrics.r2_score(y_train, pred_train)
