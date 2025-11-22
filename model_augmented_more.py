@@ -126,7 +126,6 @@ def classify_health(score):
     else:
         return "Unhealthy"
 
-# تصنيف القيم الفعلية والمتوقعة
 y_train_class = y_train.apply(classify_health)
 y_test_class = y_test.apply(classify_health)
 pred_train_class = pd.Series(pred_train).apply(classify_health)
